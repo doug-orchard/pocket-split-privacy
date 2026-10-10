@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Pocket Split handles household information, iCloud sharing and usage analytics.">
+  <title>Pocket Split — Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { margin: 0; background: #fff; color: #202124; }
+    main { max-width: 720px; margin: auto; padding: 56px 24px 72px; }
+    h1 { font-size: clamp(2rem, 6vw, 2.8rem); letter-spacing: -.04em; line-height: 1.12; margin: 12px 0; }
+    h2 { font-size: 1.25rem; margin-top: 36px; line-height: 1.35; }
+    p, li { font-size: 1rem; line-height: 1.7; }
+    li { margin: 8px 0; }
+    a { color: #075acd; text-underline-offset: 3px; }
+    .brand, .date { color: #60646c; }
+    .brand { font-weight: 600; }
+    footer { border-top: 1px solid #ddd; margin-top: 40px; padding-top: 20px; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #161719; color: #eee; }
+      a { color: #90bbff; }
+      .brand, .date { color: #b7bbc3; }
+      footer { border-color: #444; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="brand">Pocket Split</div>
+  <h1>Privacy Policy</h1>
+  <p class="date">Last updated 10 October 2026</p>
+
+  <p>Pocket Split helps you track household bills, income and payments, on your own or with other household members. This policy explains the data used by the app and the choices available to you.</p>
+
+  <h2>Who is responsible</h2>
+  <p>Pocket Split is developed by Doug Orchard. For questions about privacy or requests concerning your data, email <a href="mailto:Hello@doug-orchard.com">Hello@doug-orchard.com</a>.</p>
+
+  <h2>Household and profile information</h2>
+  <p>The app processes the information you enter, including your profile name and colour, household and member names, income, bill descriptions and amounts, payments, dates, notes and cost allocations. It also uses an iCloud account identifier to associate your profile and access with your Apple Account. Pocket Split does not ask for your Apple Account password.</p>
+  <p>Profile and household information is stored using Apple's CloudKit service. Personal profile information uses your private CloudKit database. Household records use the owner's private database and are made available to approved members through CloudKit sharing.</p>
+  <p>Information you add to a shared household can be seen by members who have access to that household. Joining requires an invitation and approval from the owner. Access can be removed, but that does not erase copies another member has already exported or otherwise saved.</p>
+
+  <h2>Usage analytics</h2>
+  <p>Pocket Split uses LukeHog, a third-party analytics service, to understand how app features are used. We send usage events, timestamps, a session identifier and a randomly generated installation identifier. We do not include names, household identifiers, financial amounts or text you enter in these analytics events. You can stop future analytics collection in <strong>Settings → Privacy → Share Usage Analytics</strong>.</p>
+  <p>Events describe actions such as opening a screen, completing setup or saving a bill. Some failure events also include a fixed error category.</p>
+  <p>The installation identifier is pseudonymous: it allows events from the same installation to be grouped over time. Network requests also expose connection information, including an IP address, to the receiving service.</p>
+  <p>Analytics is enabled by default in the current beta. To stop future analytics requests from this device, open <strong>Settings → Privacy</strong> and turn off <strong>Share Usage Analytics</strong>. This does not automatically delete events already sent.</p>
+
+  <h2>Data on your device</h2>
+  <p>The app stores preferences and the analytics installation identifier on your device. Household information can also appear in app memory, the Bills Due widget and payment reminders. Widgets and reminders may remain visible outside the app, even when you enable the app lock.</p>
+  <p>If you enable the app lock, authentication is handled by Apple's system authentication services. The app does not receive your Face ID biometric data or device passcode.</p>
+  <p>If you export a household backup, you choose where to save or share the file. That file contains household information, so only share it with people or services you trust.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Household records remain in CloudKit while the household exists. Deleting an individual entry can mark it as deleted rather than immediately erase the stored record. Leaving a shared household removes your access but does not automatically erase the household's records or your separate private profile.</p>
+  <p>The current beta supports household export and, where permitted, household deletion. It does not provide a complete in-app profile deletion flow. Contact the privacy email above for help with a deletion request. Copies saved by other members and backups you exported must be managed separately.</p>
+  <p>LukeHog's service-side retention period, network logging and deletion procedures have not been verified. Turning off analytics stops future requests from this device; it does not establish when previously sent events will be erased. We cannot currently promise a specific retention period or deletion outcome for data held by LukeHog. Contact <a href="mailto:Hello@doug-orchard.com">Hello@doug-orchard.com</a> with questions or a request concerning analytics data.</p>
+
+  <h2>Services used</h2>
+  <p>Apple provides iCloud, CloudKit, system authentication and TestFlight distribution. LukeHog is a third-party service that receives the usage analytics described above. If you submit feedback through TestFlight, Apple handles that feedback and may make it available to the developer under its TestFlight terms.</p>
+  <p>Read <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a> for information about Apple's services.</p>
+  <p>LukeHog's hosting location and international transfer arrangements have not been verified. This policy describes the information Pocket Split sends; it does not claim that LukeHog collects no additional connection information.</p>
+
+  <h2>Your privacy choices and rights</h2>
+  <p>You can turn off usage analytics on each device and manage access to a shared household. Depending on applicable law, you may have rights to access, correct or delete personal data, receive a portable copy, restrict processing or object to it. Contact <a href="mailto:Hello@doug-orchard.com">Hello@doug-orchard.com</a> to make a request. Do not include private financial details in an initial email.</p>
+  <p>If you are in the European Economic Area, you can also complain to your local data protection authority. In Sweden, this is <a href="https://www.imy.se/en/">Integritetsskyddsmyndigheten (IMY)</a>.</p>
+
+  <h2>This website</h2>
+  <p>This privacy-policy website is hosted on GitHub Pages. This page contains no analytics scripts, cookies, external fonts or tracking pixels added by Pocket Split. GitHub logs visitor IP addresses for security purposes. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>This page will be updated when the app's data handling changes. The date at the top will show when the published policy was last updated.</p>
+  <footer><p>Pocket Split · <a href="mailto:Hello@doug-orchard.com">Privacy contact</a></p></footer>
+</main>
+</body>
+</html>
