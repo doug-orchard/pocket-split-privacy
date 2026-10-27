@@ -29,7 +29,7 @@
 <main>
   <div class="brand">Pocket Split</div>
   <h1>Privacy Policy</h1>
-  <p class="date">Last updated 10 October 2026</p>
+  <p class="date">Last updated 27 October 2026</p>
 
   <p>Pocket Split helps you track household bills, income and payments, on your own or with other household members. This policy explains the data used by the app and the choices available to you.</p>
 
@@ -45,16 +45,16 @@
   <p>Pocket Split uses LukeHog, a third-party analytics service, to understand how app features are used. We send usage events, timestamps, a session identifier and a randomly generated installation identifier. We do not include names, household identifiers, financial amounts or text you enter in these analytics events. You can stop future analytics collection in <strong>Settings → Privacy → Share Usage Analytics</strong>.</p>
   <p>Events describe actions such as opening a screen, completing setup or saving a bill. Some failure events also include a fixed error category.</p>
   <p>The installation identifier is pseudonymous: it allows events from the same installation to be grouped over time. Network requests also expose connection information, including an IP address, to the receiving service.</p>
-  <p>Analytics is enabled by default in the current beta. To stop future analytics requests from this device, open <strong>Settings → Privacy</strong> and turn off <strong>Share Usage Analytics</strong>. This does not automatically delete events already sent.</p>
+  <p>Starting with version 0.2.1 (16), usage analytics is off until you explicitly enable <strong>Settings → Privacy → Share Usage Analytics</strong>. Earlier beta builds enabled analytics by default; updating requires a fresh choice before further events are sent. Turning sharing off stops future requests from this device but does not automatically delete events already sent.</p>
 
   <h2>Data on your device</h2>
-  <p>The app stores preferences and the analytics installation identifier on your device. Household information can also appear in app memory, the Bills Due widget and payment reminders. Widgets and reminders may remain visible outside the app, even when you enable the app lock.</p>
+  <p>The app stores preferences, cached household records and pending changes on your device, plus an installation identifier if you enable analytics. Cached records and pending uploads are kept in protected app storage and excluded from device backups. Household information can also appear in app memory, the Bills Due widget and payment reminders. Widgets and reminders may remain visible outside the app, even when you enable the app lock.</p>
   <p>If you enable the app lock, authentication is handled by Apple's system authentication services. The app does not receive your Face ID biometric data or device passcode.</p>
   <p>If you export a household backup, you choose where to save or share the file. That file contains household information, so only share it with people or services you trust.</p>
 
   <h2>Retention and deletion</h2>
   <p>Household records remain in CloudKit while the household exists. Deleting an individual entry can mark it as deleted rather than immediately erase the stored record. Leaving a shared household removes your access but does not automatically erase the household's records or your separate private profile.</p>
-  <p>The current beta supports household export and, where permitted, household deletion. It does not provide a complete in-app profile deletion flow. Contact the privacy email above for help with a deletion request. Copies saved by other members and backups you exported must be managed separately.</p>
+  <p>Starting with version 0.2.1 (16), open <strong>Settings → Privacy → Delete Profile and Data</strong> to review and confirm deletion. This removes your private profile and private bill zones, deletes every listed household you own for all its members, and leaves other people’s households. Your local cached data, local notification history, account-scoped preferences and analytics installation identifier are cleared. A confirmed deletion interrupted by a connection or app failure resumes when the app can reconnect. Your Apple Account is not deleted. Shared records in households owned by other people remain available to their members; when editing access permits, your membership and payer name are anonymized before access is removed. View-only copies are controlled by their owner. Backups you exported and previously sent analytics must be managed separately. Contact the privacy email above for help with a request concerning those copies.</p>
   <p>LukeHog's service-side retention period, network logging and deletion procedures have not been verified. Turning off analytics stops future requests from this device; it does not establish when previously sent events will be erased. We cannot currently promise a specific retention period or deletion outcome for data held by LukeHog. Contact <a href="mailto:Hello@doug-orchard.com">Hello@doug-orchard.com</a> with questions or a request concerning analytics data.</p>
 
   <h2>Services used</h2>
